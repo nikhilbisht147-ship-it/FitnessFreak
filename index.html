@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black px-4 justify-content-evenly fs-5 fixed-top fw-bold d-flex justify-content-evenly">
+            <a class="navbar-brand" href="#">FITNESS FREAK</a>
+          
+            <!-- Toggle Button (Hamburger) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Collapsible Part -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#section">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section1">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section2">Trainners</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#section3">Membership</a>
+                </li>   
+                <li class="nav-item">
+                    <a class="nav-link" href="#section4">Contact Us</a>
+                  </li>
+                <li class="nav-item">
+                   <!-- Button to Open Modal -->
+<button type="button"  class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">
+    Login
+  </button>
+  
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content shadow-lg">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email or Username</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+  
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+  
+            <div class="d-flex justify-content-between mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Remember me</label>
+              </div>
+              <a href="#" class="text-decoration-none">Forgot Password?</a>
+            </div>
+  
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+          </form>
+        </div>
+  
+        <div class="modal-footer text-center w-100">
+          <p class="w-100 m-0">Don't have an account? <a href="#" class="text-decoration-none">Sign Up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+                </li>
+              </ul>
+            </div>
+          </nav>
+        <!-- slideshow -->
+        <div id="section" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#section" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#section" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#section" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                   <img  src="photo30.png" style="width: 50%; height: 600px; float: right;">
+                </div>
+                <div class="carousel-item">
+                    <img src="photo42.png" style="width: 60%; height: 600px; float: right;">
+                 </div>
+                 <div class="carousel-item">
+                    <img src="photo28.png" style="width: 50%; height: 600px; float: right;">
+                 </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#section" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#section" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+              <h1 class="text" style="position: absolute; top: 200px; left: 200px; color: wheat;">
+                <span style="color: olive;">Transform</span>
+                <span>Your</span><br>
+                <span>Fitness</span>
+                <span>Journey</span><br>
+                <span>with</span>
+                <span style="color: green;">FITNESS</span>
+                <span>FREAK</span>
+              </h1>
+              <h6 style="position: absolute; top: 380px; left: 200px; color: wheat; font-size: 20px;">Achive your healthand fitness goals with <br>the ultimate personal trainer in your pocket.</h6>
+              <a href="https://play.google.com/store/games?device=windows&pli=1"><button style="position: absolute; top: 490px; left: 200px; border: none; border-radius: 10px; background-color: green; color: wheat; height: 50px; width: 250px;">Get Fitness Freak App Now</button></a>
+        </div>
+
+        <!-- ABOUT US SECTION -->
+
+        <div id="section1">
+            <h2 class="h1" style="color: black;">ABOUT US</h2>
+            <div class="secs">                
+                <div>
+                    <h1 class="build">
+                        <span style="color: green;">Building</span>
+                        <span>India's</span><br>
+                        <span>largest</span>
+                        <span>Full</span>
+                        <span>stack</span><br>
+                        <span>Fitness</span>
+                        <span>ecosystem</span>
+                    </h1>
+                    <div class="about-para">
+                        <h6 style=" font-size: 18px;">Revolutionize fitness in India with a comprehensive ecosystem offering state-of-the-art gyms, AI-driven plans, personalized training, and inclusive solutions for all. By combining technology and expertise</h6>
+                    </div>
+                    <div>
+                        <a href=""><button class="aboutbtn">Read more</button></a>
+                    </div>
+                </div>
+                <div class="mainimg">
+                    <img src="photo6.jpg" class="img1">
+                    <img src="photo7.jpg" class="img2">
+                    <img src="photo8.jpg" class="img3">
+                    <img src="photo10.jpg" class="img4">
+                </div>
+                
+            </div>
+            
+    
+        </div>
+        <!-- Trainners section -->
+        <div id="section2">
+                <h2 class="h1" style="color: black;" >TRAINERS</h2>
+            <div class="cardmain">
+                <div class="card" >
+                    <img class="card-img-top" src="photo20.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Brad Schoenfeld</h4>
+                        <p class="card-text">Lorem ipsum dolor, sit amet dii hee consectetur adipisicing elit. Similique quo officia sit beatae </p>
+                        <a class="btn btn-primary" href="#">See Profile</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="photo23.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Matt Roberts</h4>
+                        <p class="card-text">Lorem ipsum dolor, sit amet dii hee consectetur adipisicing elit. Similique quo officia sit beatae </p>
+                        <a class="btn btn-primary" href="#">See Profile</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="photo22.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Shaun Stafford</h4>
+                        <p class="card-text">Lorem ipsum dolor, sit amet dii hee consectetur adipisicing elit. Similique quo officia sit beatae </p>
+                        <a class="btn btn-primary" href="#">See Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- trainners 2nd row -->
+            <div class="cardmain1">
+                <div class="card">
+                    <img class="card-img-top" src="photo19.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Scott Laidler</h4>
+                        <p class="card-text">Lorem ipsum dolor, sit amet dii hee consectetur adipisicing elit. Similique quo officia sit beatae </p>
+                        <a class="btn btn-primary" href="#">See Profile</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="photo21.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Benjamin Stone</h4>
+                        <p class="card-text">Lorem ipsum dolor, sit amet dii hee consectetur adipisicing elit. Similique quo officia sit beatae </p>
+                        <a class="btn btn-primary" href="#">See Profile</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="photo24.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Joe Dowdell</h4>
+                        <p class="card-text">Lorem ipsum dolor, sit amet dii hee consectetur adipisicing elit. Similique quo officia sit beatae </p>
+                        <a class="btn btn-primary" href="#">See Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- membership section -->
+        <div id="section3">
+                <h2 class="h1">MEMBERSHIP</h2>
+                <div>
+                    <h4 class="para">Choose a plan to start your membership site today</h4>
+                    <p class="para1">100 days money back gurantee - no question asked</p>
+                </div>
+            <div class="membership">
+                <div class="plan1">
+                    <div class="underline1">
+                        <h3>Enterprise</h3>
+                        <h4>$50</h4> 
+                    </div>
+                    <ul>
+                        <li>6 month membership</li>
+                        <li>All equipment access</li>
+                        <li>24 hours open</li>
+                        <li>1 training sessions a month </li>
+                        <li>Reguler trainer</li>
+                        <li> No Diet plans</li>
+                        <li> No Access of 1 Zumba and yoga class every week</li>
+                    </ul>
+                    <button class="b1">Buy Now</button>
+                   
+                </div>
+                <div class="plan2">
+                    <div class="underline2">
+                        <h3>Plus</h3>
+                        <h4>$100</h4>
+                    </div>
+                    <ul>
+                        <li>1 year membership</li>
+                        <li>All equipment access</li>
+                        <li>24 hours open</li>
+                        <li>1 training sessions a month </li>
+                        <li>Reguler Trainer</li>
+                        <li> NO Diet plans</li>
+                        <li> No Access of 1 Zumba and yoga class every week</li>
+                    </ul>
+                    <button class="b2">Buy Now</button>
+                </div>
+                <div class="plan3">
+                    <div class="underline3">
+                        <h3>Standard</h3>
+                        <h4>$170</h4>
+                    </div>
+                    <ul>
+                        <li>1 year membership</li>
+                        <li>All equipment access</li>
+                        <li>24 hours open</li>
+                        <li>1 training sessions a month </li>
+                        <li>personal trainer</li>
+                        <li>Diet plans</li>
+                        <li>Access of 1 Zumba and yoga class every week</li>
+
+                    </ul>
+                    <button class="b3">Buy Now</button>
+                </div>
+                <div class="plan4">
+                   <div class="underline4">
+                       <h3>Free</h3>
+                       <h4>$0</h4>
+                   </div>
+                    <ul>
+                        <li>1 month free trial</li>
+                        <li>All equipment access</li>
+                        <li>24 hours open</li>
+                    </ul>
+                    <button class="b4">Buy Now</button>
+                </div>
+            </div>
+         </div>
+
+        <!-- contact us page -->
+        <div id="section4">
+            <div>
+                <h2 class="h1">Contact Us</h2>
+            </div>
+            <div class="conback">
+                <div>
+                <h3 class="get">Get in touch</h3>
+                <p class="want">Want to get in touch? We'd love to hear from you. Here's how, you can reach us...</p>
+                </div>
+                <img class="conimg" src="photo44.png">
+                
+            </div>
+            <div class="condivs">
+                    <div class="condiv">
+                        <i id="phone" class="fa-solid fa-phone"></i>
+                        <h5 class="phone">Phone</h5>
+                        <p class="phonep">Interested in HubSpot's software? Just pick<br> up the phone to chat with a member<br> of our sales team.</p>
+                        <p class="phonenum">+91 9000202020</p>
+                    </div>
+                    <div class="condiv">
+                        <i id="mail" class="fa-solid fa-envelope"></i>
+                        <h5 class="mail">Email</h5>
+                        <p class="mailp">Interested in HubSpot's software?<br> Just send your massage<br> in given email.</p>
+                        <p class="mailnum">bussinessinfo@gmail.com</p>
+                    </div>
+                    <div class="condiv">
+                        <i id="address" class="fa-solid fa-location-dot"></i>
+                        <h5 class="address">Address</h5>
+                        <p class="addressp">Interested in HubSpot's software?<br> Just reach in our office<br> address for enquiry.</p>
+                        <p class="addressnum">makarpura, vadodara</p>
+                    </div>
+                </div>    
+            <div class="social">
+                <a class="a" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a class="a" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a class="a" href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="a" href="https://www.instagram.com/"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          
+        </div>
+  
+        
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
